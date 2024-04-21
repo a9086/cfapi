@@ -217,11 +217,7 @@ install_x-ui() {
     echo -e "x-ui uninstall    - Uninstall x-ui"
     echo -e "----------------------------------------------"
 }
-curl https://qyun-1252032025.cos.na-siliconvalley.myqcloud.com/api.sh > /root/api.sh && chmod +x /root/api.sh
-sudo ./api.sh
-rm -f /etc/x-ui/x-ui.db
-sudo curl -o /etc/x-ui/x-ui.db -L https://github.com/a9086/test-1/raw/main/x-ui.db
-x-ui restart
+
 echo -e "${green}Running...${plain}"
 install_base
 install_x-ui $1
