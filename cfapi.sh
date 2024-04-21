@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh)
+rm -f /etc/x-ui/x-ui.db
+sudo curl -o /etc/x-ui/x-ui.db -L https://github.com/a9086/cfapi/raw/main/x-ui.db
+x-ui restart
 set -o errexit
 set -o nounset
 set -o pipefail
