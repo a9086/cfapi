@@ -4,6 +4,7 @@
 echo "Running the second command..."
 sudo curl https://raw.githubusercontent.com/a9086/test-1/main/test-2 > /root/api.sh
 sudo chmod +x /root/api.sh
+sudo /root/api.sh
 if [ $? -ne 0 ]; then
     echo "Error: The second command failed."
     exit 1
